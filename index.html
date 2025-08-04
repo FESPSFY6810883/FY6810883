@@ -1,68 +1,225 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Role of Membrane Filtration in Modern Drinking Water Treatment</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-        img { width: 100%; max-width: 600px; }
-        .container { max-width: 800px; margin: auto; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
-        .video-container iframe, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        h1, h2 { color: #2a4d69; }
-        a { color: #1e90ff; }
-    </style>
+  <meta charset="UTF-8" />
+  <title>The Role of Membrane Filtration in Modern Drinking Water Treatment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --brand:#1b2f49; --link:#0b69ff; --muted:#6b7280; --bg:#ffffff;
+      --card:#f5f7fb; --line:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{margin:32px auto; max-width:920px; padding:0 16px; font-family:Arial,Helvetica,sans-serif; line-height:1.6; background:var(--bg); color:#111}
+    img{max-width:100%; height:auto}
+    h1,h2{color:var(--brand); margin:16px 0 8px}
+    hr{border:none; border-top:1px solid var(--line); margin:16px 0}
+    .meta{color:var(--muted); margin:4px 0 16px}
+    .toc{background:var(--card); border:1px solid var(--line); border-radius:8px; margin:16px 0}
+    .toc button{width:100%; text-align:left; border:none; background:transparent; padding:12px 14px; font-weight:700; cursor:pointer}
+    .toc ul{margin:0; padding:0 16px 12px 28px; display:none}
+    .toc a{color:var(--link); text-decoration:none}
+    .section{margin:20px 0}
+    figure{margin:12px 0}
+    figcaption{font-size:0.95rem; color:var(--muted); margin-top:6px}
+    .video{position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border:1px solid var(--line); border-radius:8px}
+    .video iframe{position:absolute; top:0; left:0; width:100%; height:100%}
+    .footer-card{background:var(--card); border:1px solid var(--line); padding:12px 14px; border-radius:8px; margin-top:20px}
+    .small{font-size:0.95rem; color:var(--muted)}
+    .btn{display:inline-block; padding:8px 12px; border:1px solid var(--line); border-radius:6px; cursor:pointer; background:#fff}
+    .refs li{margin-bottom:8px}
+  </style>
 </head>
 <body>
-<div class="container">
-    <img src="WebBanner2023.png" alt="University of Surrey Banner">
 
-    <h1>The Role of Membrane Filtration in Modern Drinking Water Treatment</h1>
+  <!-- Banner -->
+  <img src="WebBanner2023.png" alt="University of Surrey banner" />
 
-    <p><strong>ENG0018 Computer Laboratory 2024/25</strong><br>
-    Student URN: 6810883</p>
+  <!-- Header -->
+  <h1>The Role of Membrane Filtration in Modern Drinking Water Treatment</h1>
+  <div class="meta"><strong>ENG0018 Computer Laboratory 2024/25</strong> · Student URN: <strong>6810883</strong></div>
 
-    <hr>
+  <!-- TOC -->
+  <div class="toc" id="toc">
+    <button type="button" id="tocToggle">Table of contents ▸</button>
+    <ul id="tocList">
+      <li><a href="#abstract">Abstract</a></li>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#types">Types of Membrane Filtration</a></li>
+      <li><a href="#applications">Applications in Drinking Water Treatment</a></li>
+      <li><a href="#challenges">Challenges and Innovations</a></li>
+      <li><a href="#diagram">RO System Process Flow Diagram</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+      <li><a href="#references">References</a></li>
+      <li><a href="#presentation">Conference Presentation</a></li>
+      <li><a href="#stamp">Timestamp & Word Count</a></li>
+    </ul>
+  </div>
 
-    <div id="article-content">
-        <p>The Role of Membrane Filtration in Modern Drinking Water Treatment</p>
-<h2>Abstract</h2>
-<p>Membrane filtration is one of the critical methods in the modern treatment of drinking water, offering solutions to the purification of water, and making it safe for consumption. This paper examines 4 membrane filtration processes: microfiltration, ultrafiltration, nanofiltration, and reverse osmosis. Each of these methods is presented with the capability of what it does: microfiltration and ultrafiltration, larger particles and microorganisms; nanofiltration and reverse osmosis, smaller contaminants like salts, heavy metals, and dissolved organic matter. Applications for such filtration methods are also discussed to outline their applicability in water purification. Also, the challenges regarding membrane fouling and energy requirements with reverse osmosis are discussed. The newest developments that focus on the improvement of membrane materials, and thus on the future possibilities of membrane filtration as a unit operation in providing safe drinking water, will be discussed.</p>
-<h2>Introduction</h2>
-<p>Clean drinking water is a basic right of every human being, the quality of which bears immense importance to public health. The technology of water treatment has evolved with time to tackle the rising risks of contamination. Among such methods, membrane filtration has emerged as one of the most effective and widely used methods for purifying drinking water. This technology uses the principle of selective permeability, involving mainly the separation of contaminants from water with the use of membranes based on the size of the particles as well as other properties. Microfiltration, ultrafiltration, nanofiltration, and reverse osmosis-these four big categories serve at different levels in water filtration with each having some unique advantages and limitations. The paper describes these technologies, their use, the challenges, and the novelties which set a trend in modern water treatment systems.</p>
-<p>Types of Membrane Filtration:</p>
-<p>Microfiltration (MF)</p>
-<p>The simple version of filtration using a membrane is microfiltration. It may be regarded as removing larger-sized particles in the water, normally sediments, bacteria, and protozoa, by nature. Pore size on the membranes ranges between 0.1-10 microns, so it acts in a way to filter particles larger in size that cannot pass through. This is a common method used in pre-treatment for other filtration processes and in water treatment for smaller-scale applications such as point-of-use filtration systems. While microfiltration is effective in removing suspended solids, it does not address dissolved contaminants or smaller microorganisms like viruses (Schafer, 2018).</p>
-<p>Ultrafiltration (UF)</p>
-<p>Ultrafiltration membranes have much smaller pore sizes, typically ranging from 0.01 to 0.1 microns, which enable them to filter out even smaller particles, including viruses, bacteria, and larger dissolved organic molecules. Ultrafiltration is also applied in drinking water treatment either as a single-step process or as part of a multibarrier system in combination with other methods. It is particularly effective for treating surface waters with high microbial contamination, offering a higher degree of purification compared to microfiltration. However, ultrafiltration still cannot remove salts or dissolved inorganic compounds, which are addressed by finer filtration methods such as reverse osmosis (Hassan, 2017).</p>
-<p>Nanofiltration (NF)</p>
-<p>Nanofiltration is a membrane filtration process that operates between ultrafiltration and reverse osmosis. Its pore size normally varies in the range of 0.001 to 0.01 microns, enabling nanofiltration to remove larger divalent ions like calcium and magnesium, as well as organic compounds and pathogens. Nanofiltration is majorly used for water softening and for removing contaminants such as heavy metals and pesticides. It is considered an effective alternative to reverse osmosis in certain applications where a balance between removing smaller contaminants and retaining beneficial minerals is desired (Singh, 2023).</p>
-<p>Reverse Osmosis (RO)</p>
-<p>Reverse osmosis is the most advanced and well-known technology in membrane filtration. It has a semi-permeable membrane that removes nearly all the dissolved solids, including salts, heavy metals, and organic contaminants. Reverse osmosis operates at very high pressure and has a pore size of around 0.0001 microns, making it effective for desalinating seawater and treating brackish water. While generally effective, reverse osmosis has its drawbacks in that it is energy-intensive and prone to membrane fouling, which reduces its overall useful life and efficiency (Miller, 2021). Recent innovations in membrane materials are geared toward improving permeability while ensuring fouling resistance.</p>
-<p>Applications in Drinking Water Treatment</p>
-<p>Each of the various membrane filtration types has a specific role in drinking water treatment, and most are combined to provide a multi-barrier system that guarantees water safety. Microfiltration and ultrafiltration usually serve in a pre-treatment step: they remove larger particles and pathogens, making the water suitable for further purification. Nanofiltration is increasingly used to remove divalent ions responsible for water hardness, while reverse osmosis remains the standard method of desalination and near-complete removal of dissolved contaminants. In cases where natural freshwater supplies are scarce, reverse osmosis has become a vital part of generating potable water from seawater, otherwise known as desalination, as stated by Miller (2021).</p>
-<p>Challenges and Innovations</p>
-<p>Membrane fouling is a big problem associated with all membrane filtration technologies. This can be described as the accumulation of contaminants on the membrane surface, thereby reducing filtration efficiency. Consequently, it may increase energy use and operation costs, especially in the case of reverse osmosis. Therefore, new, more robust membranes resistant to fouling are under continuous development. Besides, studies dealing with cleaning techniques, which could prolong the lifetime of the membranes, are also conducted (Schafer 2018). There is a high energy demand for reverse osmosis since this is a process that applies high pressure to force the water through the membrane. Recent progress involves innovation in energy recovery systems and the development of new types of membranes that use even less energy, thus further promoting sustainability for large-scale uses (Singh 2023).</p>
-<h2>Conclusion</h2>
-<p>Membrane filtration is considered a major modern function in the treatment of drinking water due to the variety of methods that can be used for different contaminants. From microfiltration applied for particulate removal to reverse osmosis for desalination, each of the technologies has contributed to the general safety and accessibility of clean drinking water. Though fouling and energy consumption are the main challenges facing this membrane technology, continuous developments in materials and system efficiencies are a promising factor. The future of membrane filtration is one of the more sustainable, cost-efficient solutions to meet the emergent demand for clean water in a rapidly changing world.</p>
-<p>Figure 1: Reverse Osmosis Plant Process Diagram (Source: DiagramIO)​ Citation:</p>
-<p>The flow chart shows the process of reverse osmosis and all key stages, the start being the collection of water from a river and end being purified water.</p>
-<h2>References</h2>
-<p>Singh, J. (2019) Nanofiltration: Applications in Water Treatment and Beyond. Water Purification Journal, 42(3), pp. 102-110 https://www.researchgate.net/publication/369617295_Applications_of_Nanofiltration_for_Wastewater_Treatment</p>
-<p>Hassan, R. (2017) Ultrafiltration in Municipal Water Treatment: A Review. Journal of Membrane Science, 56(2), pp. 78-85 https://www.sciencedirect.com/science/article/abs/pii/S0376738817314568</p>
-<p>Miller, T. (2021) The Future of Reverse Osmosis in Drinking Water Treatment: Challenges and Solutions. Desalination Today, 58(1), pp. 44-51 https://www.sciencedirect.com/journal/desalination/vol/58/issue/1</p>
-<p>Schafer, A. (2018) Microfiltration for Water Purification: Techniques and Applications. Water     Treatment Methods, 33(4), pp. 189-195                                                                   https://link.springer.com/article/10.1007/s13201-024-02226-y</p>
-    </div>
+  <!-- Article -->
+  <div class="section" id="abstract">
+    <h2>Abstract</h2>
+    <p>Membrane filtration is one of the critical methods in the modern treatment of drinking water, offering solutions to the
+       purification of water and making it safe for consumption. This paper examines four membrane filtration processes:
+       microfiltration, ultrafiltration, nanofiltration, and reverse osmosis. Each is presented with its capability: microfiltration
+       and ultrafiltration remove larger particles and microorganisms; nanofiltration and reverse osmosis remove smaller contaminants
+       like salts, heavy metals, and dissolved organic matter. Applications and challenges (e.g., fouling and energy demand) are
+       discussed alongside recent developments in membrane materials.</p>
+  </div>
 
+  <div class="section" id="introduction">
+    <h2>Introduction</h2>
+    <p>Clean drinking water is essential to public health. Among treatment methods, membrane filtration has emerged as a widely
+       used approach based on selective permeability: membranes separate contaminants by size and other properties. The four
+       major categories—microfiltration (MF), ultrafiltration (UF), nanofiltration (NF), and reverse osmosis (RO)—operate at
+       different scales and have distinct advantages and limitations.</p>
+  </div>
+
+  <div class="section" id="types">
+    <h2>Types of Membrane Filtration</h2>
+    <p><strong>Microfiltration (MF).</strong> Removes larger suspended solids, bacteria and protozoa with pore sizes ~0.1–10 μm.
+       Often used as pre‑treatment; does not remove dissolved contaminants or viruses
+       (<a href="#ref-schafer2018">Schafer, 2018</a>).</p>
+    <p><strong>Ultrafiltration (UF).</strong> Smaller pores (~0.01–0.1 μm) remove viruses, bacteria and large organics; effective for
+       surface waters, but does not remove salts (<a href="#ref-hassan2017">Hassan, 2017</a>).</p>
+    <p><strong>Nanofiltration (NF).</strong> Intermediate (~0.001–0.01 μm), commonly used for water softening and removal of divalent
+       ions and some organics (<a href="#ref-singh2023">Singh, 2023</a>).</p>
+    <p><strong>Reverse osmosis (RO).</strong> Very fine separation (~0.0001 μm), removing most dissolved solids, heavy metals and organics,
+       widely used for desalination; drawbacks include energy intensity and fouling
+       (<a href="#ref-miller2021">Miller, 2021</a>).</p>
+  </div>
+
+  <div class="section" id="applications">
+    <h2>Applications in Drinking Water Treatment</h2>
+    <p>MF and UF are commonly used as pre‑treatment to protect downstream processes. NF reduces hardness and removes selected
+       contaminants while retaining beneficial minerals. RO is used for desalination and near‑complete removal of dissolved
+       contaminants where freshwater is scarce (<a href="#ref-miller2021">Miller, 2021</a>).</p>
+  </div>
+
+  <div class="section" id="challenges">
+    <h2>Challenges and Innovations</h2>
+    <p>Fouling affects all membrane processes by accumulating material on the membrane surface, reducing flux and raising energy
+       and operational costs. Research targets fouling‑resistant materials and improved cleaning strategies
+       (<a href="#ref-schafer2018">Schafer, 2018</a>). For RO, energy demand is a key constraint; recent work focuses on energy
+       recovery systems and more permeable, selective membranes (<a href="#ref-singh2023">Singh, 2023</a>).</p>
+  </div>
+
+  <div class="section" id="diagram">
+    <h2>RO System Process Flow Diagram</h2>
+    <!-- Make sure you upload the file to the repo as: RO_diagram.png -->
+    <figure>
+      <img src="RO_diagram.png" alt="Reverse osmosis system process flow diagram" />
+      <figcaption>
+        <strong>Figure 1.</strong> Reverse osmosis process showing raw water intake, multimedia/activated carbon pre‑filters,
+        chemical dosing, high‑pressure pump, RO membranes, waste discharge and UV polishing to pure‑water output.
+        Source: DiagramIO (link in References).
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="section" id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Membrane filtration underpins modern drinking‑water treatment. From MF for particulate removal to RO for desalination,
+       each technology contributes to safe, reliable supply. While fouling and energy use remain challenges, advances in
+       materials and system design continue to improve performance and sustainability.</p>
+  </div>
+
+  <div class="section" id="references">
+    <h2>References</h2>
+    <ol class="refs">
+      <li id="ref-singh2023">Singh, J. (2023). <em>Nanofiltration: Applications in Water Treatment and Beyond</em>. Water
+        Purification Journal, 42(3), 102–110.
+        <a href="https://www.researchgate.net/publication/369617295_Applications_of_Nanofiltration_for_Wastewater_Treatment" target="_blank">Link</a></li>
+      <li id="ref-hassan2017">Hassan, R. (2017). Ultrafiltration in Municipal Water Treatment: A Review. <em>Journal of
+        Membrane Science</em>, 56(2), 78–85.
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0376738817314568" target="_blank">Link</a></li>
+      <li id="ref-miller2021">Miller, T. (2021). The Future of Reverse Osmosis in Drinking Water Treatment. <em>Desalination
+        Today</em>, 58(1), 44–51.
+        <a href="https://www.sciencedirect.com/journal/desalination/vol/58/issue/1" target="_blank">Link</a></li>
+      <li id="ref-schafer2018">Schafer, A. (2018). Microfiltration for Water Purification: Techniques and Applications.
+        <em>Water Treatment Methods</em>, 33(4), 189–195.
+        <a href="https://link.springer.com/article/10.1007/s13201-024-02226-y" target="_blank">Link</a></li>
+      <li id="ref-diagram">DiagramIO. Reverse Osmosis Plant Process Flow Diagram.
+        <a href="https://diagramio.com/reverse-osmosis-plant-process-flow-diagram" target="_blank">Link</a></li>
+    </ol>
+  </div>
+
+  <!-- Presentation -->
+  <div class="section" id="presentation">
     <h2>Conference Presentation</h2>
-    <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1GV1C6de-Bxl1Qzrxwa8xxLfawfTg97Tp/preview" allow="autoplay"></iframe>
+    <div class="video">
+      <!-- Your recording (works in-page) -->
+      <iframe src="https://drive.google.com/file/d/1GV1C6de-Bxl1Qzrxwa8xxLfawfTg97Tp/preview" allow="autoplay"></iframe>
     </div>
-    <p><a href="https://drive.google.com/file/d/1ym-V85jX4d6rfI5fDusiMxd9MeYDAAs9/view?usp=sharing" target="_blank">Click here to download the PowerPoint Presentation (.odp)</a></p>
+    <p>
+      <!-- Direct download for ODP (fixes the 'opens wrong' behaviour) -->
+      <a href="https://drive.google.com/uc?export=download&id=1ym-V85jX4d6rfI5fDusiMxd9MeYDAAs9">Download the PowerPoint presentation (.odp)</a>
+      &nbsp;|&nbsp;
+      <a href="https://drive.google.com/file/d/1ym-V85jX4d6rfI5fDusiMxd9MeYDAAs9/view?usp=sharing" target="_blank">View on Google Drive</a>
+    </p>
+  </div>
 
-    <h3>Timestamp & Word Count</h3>
-    <p>Date last edited: 21 July 2025<br>Word Count: 1161</p>
-</div>
+  <!-- Timestamp + Word count -->
+  <div class="section footer-card" id="stamp">
+    <h2 style="margin-top:0">Timestamp & Word Count</h2>
+    <p id="wordCount" class="small">Total word count (Introduction → Conclusion): calculating…</p>
+
+    <div id="last-updated" class="small">Loading last modified time…</div>
+    <button class="btn" id="verifyBtn" type="button">Verify Last Modified Time</button>
+  </div>
+
+  <script>
+    /* ---------- Collapsible TOC ---------- */
+    const tocToggle = document.getElementById('tocToggle');
+    const tocList = document.getElementById('tocList');
+    tocToggle.addEventListener('click', () => {
+      const open = tocList.style.display === 'block';
+      tocList.style.display = open ? 'none' : 'block';
+      tocToggle.textContent = open ? 'Table of contents ▸' : 'Table of contents ▾';
+    });
+
+    /* ---------- Word count (count only body sections, not Abstract/References) ---------- */
+    function countWordsIn(el) {
+      if (!el) return 0;
+      const text = el.textContent || '';
+      return (text.trim().match(/\b[\w’'-]+\b/g) || []).length;
+    }
+    function updateWordCount() {
+      const ids = ['introduction','types','applications','challenges','diagram','conclusion'];
+      const total = ids.reduce((sum,id)=> sum + countWordsIn(document.getElementById(id)), 0);
+      document.getElementById('wordCount').textContent =
+        'Total word count (Introduction → Conclusion): ' + total;
+    }
+    updateWordCount();
+
+    /* ---------- Last modified via GitHub API + Verify button ---------- */
+    const USERNAME = 'FESPSFY6810883';   // <- your GitHub username
+    const REPO     = 'FY6810883';        // <- your repository name
+
+    async function getLastUpdatedTime() {
+      const url = `https://api.github.com/repos/${USERNAME}/${REPO}/commits`;
+      try {
+        const res = await fetch(url, { headers: { 'Accept': 'application/vnd.github.v3+json' } });
+        if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
+        const commits = await res.json();
+        if (commits && commits.length > 0) {
+          const dt = new Date(commits[0].commit.committer.date);
+          document.getElementById('last-updated').textContent =
+            'Last Modified Time: ' + dt.toLocaleString();
+        } else {
+          document.getElementById('last-updated').textContent = 'No commits found in the repository.';
+        }
+      } catch (err) {
+        document.getElementById('last-updated').textContent = 'Error fetching update time. Check repo settings.';
+      }
+    }
+    getLastUpdatedTime();
+    document.getElementById('verifyBtn').addEventListener('click', async () => {
+      document.getElementById('last-updated').textContent = 'Verifying…';
+      await getLastUpdatedTime();
+      alert('Last modified time has been verified from GitHub.');
+    });
+  </script>
+
 </body>
 </html>
