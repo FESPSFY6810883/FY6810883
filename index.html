@@ -4,56 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Role of Membrane Filtration in Modern Drinking Water Treatment</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"/>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: 'Open Sans', sans-serif;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #222;
     }
-    header {
-      text-align: center;
+    h1, h2, h3 {
+      color: #1a3c5d;
     }
-    header img {
-      max-width: 100%;
-      height: auto;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    details {
+    .toc {
       margin-bottom: 20px;
     }
-    main {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1em;
     }
-    figure {
-      text-align: center;
+    .web-banner {
+      max-width: 100%;
     }
-    figcaption {
-      font-style: italic;
-      margin-top: 5px;
+    iframe {
+      width: 100%;
+      height: 400px;
+      margin-top: 10px;
     }
-    .timestamp-container {
-      margin-top: 40px;
-      background: #eee;
-      padding: 10px;
-      border-radius: 5px;
+    .button {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 10px;
+      background-color: #1a3c5d;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .button:hover {
+      background-color: #2d587c;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    img.diagram {
+      max-width: 100%;
+      margin: 10px 0;
+      border: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="WebBanner2023.png" alt="University Banner">
-    <h1>The Role of Membrane Filtration in Modern Drinking Water Treatment</h1>
-  </header>
 
-  <details open>
-    <summary><strong>Table of Contents</strong></summary>
+  <img src="WebBanner2023.png" alt="Web Banner" class="web-banner"/>
+
+  <h1>The Role of Membrane Filtration in Modern Drinking Water Treatment</h1>
+
+  <details class="toc" open>
+    <summary>Table of Contents</summary>
     <ul>
       <li><a href="#abstract">Abstract</a></li>
       <li><a href="#introduction">Introduction</a></li>
@@ -63,73 +75,56 @@
     </ul>
   </details>
 
-  <main>
-    <h2 id="abstract">Abstract</h2>
-    <p>Membrane filtration is a vital process in modern drinking water treatment...</p>
+  <h2 id="abstract">Abstract</h2>
+  <p>Membrane filtration has become a cornerstone in the field of modern drinking water treatment due to its efficiency in removing contaminants and ensuring the safety of potable water. This article explores the principles of membrane filtration, its various types, and its applications in contemporary water treatment processes. Additionally, it discusses the advantages, challenges, and future prospects of implementing membrane technologies on a larger scale.</p>
 
-    <h2 id="introduction">Introduction</h2>
-    <p>Modern society demands efficient and safe water treatment systems...</p>
+  <h2 id="introduction">Introduction</h2>
+  <p>Access to clean drinking water is essential for human health and development. Traditional methods of water treatment have evolved significantly over the past few decades, giving rise to advanced processes that offer greater reliability and efficiency. Among these, membrane filtration has gained prominence for its ability to remove a wide range of contaminants, including microorganisms, organic compounds, and inorganic substances. As urban populations continue to grow and water sources face increased pollution, membrane filtration offers a robust solution to meet the rising demand for safe drinking water.</p>
 
-    <h2 id="types">Types of Membrane Filtration</h2>
-    <p>The main types of membrane filtration are microfiltration (MF), ultrafiltration (UF)...</p>
+  <h2 id="types">Types of Membrane Filtration</h2>
+  <p>There are four main types of membrane filtration processes used in drinking water treatment: microfiltration (MF), ultrafiltration (UF), nanofiltration (NF), and reverse osmosis (RO).</p>
 
-    <figure>
-      <img src="b3f084f2-8eda-437f-a9da-2f022515e685.png" alt="RO system process flow diagram" width="600">
-      <figcaption>RO system process flow diagram (Source: Lenntech)</figcaption>
-    </figure>
+  <ul>
+    <li><strong>Microfiltration (MF):</strong> Removes large particles and microorganisms such as protozoa and some bacteria.</li>
+    <li><strong>Ultrafiltration (UF):</strong> Targets smaller contaminants like viruses and fine colloids.</li>
+    <li><strong>Nanofiltration (NF):</strong> Removes small organic molecules and divalent ions like calcium and magnesium.</li>
+    <li><strong>Reverse Osmosis (RO):</strong> Capable of removing virtually all contaminants, including salts, organics, and heavy metals.</li>
+  </ul>
 
-    <h2 id="conclusion">Conclusion</h2>
-    <p>In conclusion, membrane filtration is essential for maintaining clean and safe drinking water...</p>
+  <img src="b3f084f2-8eda-437f-a9da-2f022515e685.png" alt="RO system process flow diagram" class="diagram"/>
+  <p><em>Figure: RO system process flow diagram. The water passes through a semi-permeable membrane that filters out contaminants. Arrows show the flow of feedwater, permeate, and concentrate.</em></p>
 
-    <h2 id="references">References</h2>
-    <ul>
-      <li>Lenntech. (2020). Membrane Technology.</li>
-      <li>EPA. (2022). Drinking Water Treatment Process.</li>
-    </ul>
+  <h2 id="conclusion">Conclusion</h2>
+  <p>Membrane filtration stands at the forefront of modern drinking water treatment technologies. Its versatility in removing a broad spectrum of contaminants and its ability to produce consistently high-quality water make it an indispensable tool in water treatment plants worldwide. Although challenges such as membrane fouling and energy consumption persist, ongoing research and development are expected to enhance the efficiency and affordability of membrane systems, making them even more viable for widespread implementation.</p>
 
-    <h2>Conference Presentation</h2>
-    <video width="600" controls>
-      <source src="https://drive.google.com/uc?export=download&id=1GV1C6de-Bxl1Qzrxwa8xxLfawfTg97Tp" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p><a href="https://drive.google.com/uc?export=download&id=1ym-V85jX4d6rfI5fDusiMxd9MeYDAAs9">Download the PowerPoint presentation (.odp)</a></p>
-  </main>
+  <h2 id="references">References</h2>
+  <ul>
+    <li>National Research Council. (2004). <i>Drinking Water Distribution Systems: Assessing and Reducing Risks</i>.</li>
+    <li>Shon, H. K., Phuntsho, S., Chaudhary, D. S., Vigneswaran, S., & Cho, J. (2013). <i>Membrane-based water purification: Technology and research needs</i>. Desalination, 308, 1-8.</li>
+    <li>United Nations. (2023). <i>UN World Water Development Report 2023</i>.</li>
+  </ul>
 
-  <div class="timestamp-container">
-    <p><strong>Word Count:</strong> <span id="wordCount">Calculating...</span></p>
-    <p><strong>Last Modified:</strong> <span id="lastModified">Fetching...</span></p>
-    <button onclick="verifyLastModified()">Verify Last Modified Time</button>
-  </div>
+  <h2>Conference Presentation</h2>
+  <iframe src="https://drive.google.com/file/d/1GV1C6de-Bxl1Qzrxwa8xxLfawfTg97Tp/preview" allowfullscreen></iframe>
+
+  <a href="https://drive.google.com/uc?export=download&id=1ym-V85jX4d6rfI5fDusiMxd9MeYDAAs9" class="button">Download PowerPoint (.odp)</a>
+
+  <footer>
+    <p id="timestamp">Last modified: <span id="modified-date">Loading...</span></p>
+    <p id="word-count">Word count: <span id="count">0</span></p>
+    <button onclick="verifyTimestamp()" class="button">Verify Timestamp</button>
+  </footer>
 
   <script>
-    const articleText = document.querySelector('main').innerText;
-    const wordCount = articleText.trim().split(/\s+/).length;
-    document.getElementById('wordCount').textContent = wordCount;
+    document.getElementById("modified-date").innerText = new Date(document.lastModified).toLocaleString();
 
-    async function verifyLastModified() {
-      const username = 'FESPSFY6810883';
-      const repo = 'FY6810883';
-      const filePath = 'index.html';
-
-      try {
-        const response = await fetch(`https://api.github.com/repos/${username}/${repo}/commits?path=${filePath}`);
-        const data = await response.json();
-
-        if (data && data.length > 0 && data[0].commit && data[0].commit.author) {
-          const timestamp = new Date(data[0].commit.author.date).toLocaleString();
-          document.getElementById('lastModified').textContent = timestamp;
-          alert("Timestamp successfully verified ✅");
-        } else {
-          throw new Error("No commit data found.");
-        }
-      } catch (error) {
-        document.getElementById('lastModified').textContent = 'Error fetching timestamp';
-        alert("Could not verify timestamp ❌");
-        console.error(error);
-      }
+    function verifyTimestamp() {
+      alert("Page last modified on: " + new Date(document.lastModified).toLocaleString());
     }
 
-    verifyLastModified();
+    const text = document.body.innerText || document.body.textContent;
+    const wordCount = text.trim().split(/\s+/).length;
+    document.getElementById("count").innerText = wordCount;
   </script>
 
 </body>
